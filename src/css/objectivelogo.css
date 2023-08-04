@@ -1,0 +1,228 @@
+:root {
+  font-family: sans-serif;
+}
+.objectivelogo-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+}
+.objective-wrap {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.objective-text {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: sans-serif;
+  line-height: 5rem;
+}
+.slogan-text {
+  font-size: 21px;
+}
+.hire-job-divs {
+  display: flex;
+  gap: 20px;
+}
+.job-btn {
+  border: 1px solid #dcdcdc;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: transform 1.5s ease-in-out, background-color 0.6s;
+}
+.job-btn:hover {
+  border-color: red;
+  background-color: #ffe6e6;
+  color: red;
+}
+.hire-btn:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+.hire-btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 12px 22px;
+  transition: transform 1.5s ease-in-out, background-color 0.6s;
+}
+.Logo-wrap {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding-right: 70px;
+  gap: 20px;
+}
+.part1-wrap {
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  /* gap: 30px; */
+  /* border: 1px solid orange; */
+  align-items: center;
+  overflow: hidden;
+}
+.part1-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  animation: part1circle 0.6s linear;
+  /* border: 1px solid orange; */
+}
+@keyframes part1circle {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.part1-circle img {
+  height: 100%;
+  border-radius: 50%;
+}
+.part1-rectangle {
+  background-color: rgb(245, 149, 165);
+  border-radius: 20px;
+  height: 94%;
+  width: 85%;
+  animation: part1rect 0.6s linear;
+}
+@keyframes part1rect {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* -------------------------------------------------- */
+.part2-wrap {
+  display: grid;
+  grid-template-columns: 45% 33% 12%;
+  /* border: 1px solid red; */
+  gap: 20px;
+  padding: 5px 30px;
+  padding-left: 40px;
+  overflow: hidden;
+}
+.part2-rect {
+  background-color: rgb(227, 46, 24);
+  width: 90%;
+  animation: part2rect 0.6s linear;
+}
+
+.part2-w-alpha {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  animation: part2w 0.6s linear;
+}
+.part2-w-alpha div {
+  font-size: 14rem;
+}
+.part2-dots-wrap {
+  /* background-color: rgb(227, 46, 24); */
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  animation: part2dots 0.6s linear;
+}
+.part2-dot1 img,
+.part2-dot2 img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .objective-wrap {
+    display: none;
+  }
+
+  .Logo-wrap {
+    width: 139%;
+    /* height: 100%; */
+    margin-top: 150px !important;
+    /* border: 1px solid red; */
+  }
+  .part2-wrap {
+    width: 118% !important;
+  }
+  .part1-wrap {
+    width: 136% !important;
+  }
+  .part1-rectangle {
+    width: 90%;
+  }
+  .part2-rect {
+    height: 90%;
+  }
+  .part2-w-alpha div {
+    font-size: 12rem;
+  }
+  .part3-wrap {
+    width: 120%;
+  }
+}
+
+.part3-wrap {
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: 70% 50%;
+  overflow: hidden;
+}
+.part3-rect {
+  background-color: rgb(244, 198, 61);
+  border-radius: 100px;
+  width: 96%;
+  animation: part3rect 0.6s linear;
+}
+.part3-circle {
+  animation: part3circle 0.6s linear;
+}
+.part3-circle img {
+  height: 100%;
+  border-radius: 50%;
+}
+@keyframes part2rect {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes part2w {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes part2dots {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes part3rect {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes part3circle {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

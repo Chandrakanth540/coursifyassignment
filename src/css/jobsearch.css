@@ -1,0 +1,135 @@
+.jobsearch-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  padding-top: 170px;
+  gap: 30px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+}
+.popover {
+  padding: 1px 10px;
+}
+.popover p:hover {
+  /* background-color: #fee2e2; */
+  color: #ec2e3a;
+}
+
+.popover-title {
+  /* background-color: ; */
+  border: 1px solid #dcdcdc;
+  padding: 4px 10px;
+  /* font-size: 17px; */
+  letter-spacing: 0.03rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.popover-title:hover {
+  color: #ec2e3a;
+  background-color: #fee2e2;
+  border: 1px solid #ec2e3a;
+}
+/* ............................................... */
+.Footer-wrapper {
+  padding: 80px 70px;
+}
+.Footer-wrap1 {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  align-items: start;
+}
+
+.wrap1-left-img {
+  width: 100%;
+}
+.wrap1-left-img img {
+  width: 40%;
+}
+.wrap1-left-socialmedia {
+  display: flex;
+  gap: 10px;
+  padding: 13px 1px;
+}
+.wrap1-left-socialmedia div:hover {
+  color: #1da1f2;
+}
+.wrap1-right {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.listformed-wrap {
+  padding: 2px 1px;
+}
+.listformed-values {
+  padding: 1px 1px;
+}
+.listformed-title {
+  font-weight: 600;
+  padding: 5px 1px;
+  letter-spacing: 0.01rem;
+}
+.li-value {
+  padding: 6px 2px;
+  list-style-type: none;
+  letter-spacing: 0.03rem;
+}
+.Footer-wrap2 {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin-top: 30px;
+  align-items: center;
+  /* padding-bottom: 20px; */
+}
+.rights {
+  color: #777;
+  line-height: 1.4rem;
+}
+.all-techs {
+  color: #777;
+  /* font-size: 17px; */
+  padding: 10px 40px;
+  letter-spacing: 0.01rem;
+  line-height: 1.4rem;
+}
+.all-techs a {
+  color: #777;
+}
+.all-techs a:hover {
+  color: blue;
+}
+.li-value:hover {
+  color: #ec2e3a;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .Footer-wrapper {
+    padding: 30px 20px;
+  }
+  .Footer-wrap1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap1-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .Footer-wrap2 {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .all-techs {
+    padding: 20px 0px;
+  }
+  .jobsearch-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
